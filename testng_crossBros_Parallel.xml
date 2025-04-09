@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+    <test verbose="2" preserve-order="true" name="./src/test/java/testcases/Login_Flow_Test_CrossBro.java">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="testcases.UI.Login_Flow_Test_CrossBro"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="./src/test/java/testcases/Login_Flow_Test_CrossBro2.java">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="testcases.UI.Login_Flow_Test_CrossBro2"/>
+        </classes>
+    </test>
+</suite>

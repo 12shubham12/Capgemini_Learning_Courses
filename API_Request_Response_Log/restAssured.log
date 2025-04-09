@@ -1,0 +1,6 @@
+Body:
+{
+    "name": "Rohit",
+    "job": "Sharma"
+}
+HTTP/1.1 201 Created
