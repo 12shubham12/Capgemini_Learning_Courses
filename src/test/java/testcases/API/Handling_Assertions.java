@@ -11,10 +11,8 @@ import static org.hamcrest.Matchers.*;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-import static testcases.API.Handling_TokenGeneration.renewBearerToken;
+import static testcases.API.Handling_TokenGeneration.renewoAuthToken;
 
 public class Handling_Assertions {
 
@@ -26,7 +24,7 @@ public class Handling_Assertions {
 
         Response response = RestAssured
                 .given()
-                .header("Authorization","Bearer "+renewBearerToken())
+                .header("Authorization","Bearer "+renewoAuthToken())
                 .contentType(ContentType.JSON)
                 .baseUri("https://reqres.in")
                 .body(input_body_put)
@@ -66,7 +64,7 @@ public class Handling_Assertions {
 
         Response response = RestAssured
                 .given()
-                .header("Authorization","Bearer "+renewBearerToken())
+                .header("Authorization","Bearer "+renewoAuthToken())
                 .contentType(ContentType.JSON)
                 .baseUri("https://reqres.in")
                 .body(input_body_put)
@@ -95,7 +93,7 @@ public class Handling_Assertions {
 
         Response response = RestAssured
                 .given()
-                .header("Authorization","Bearer "+renewBearerToken())
+                .header("Authorization","Bearer "+renewoAuthToken())
                 .contentType(ContentType.JSON)
                 .baseUri("https://reqres.in")
                 .body(input_body_put)
