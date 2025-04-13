@@ -4,14 +4,9 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
-
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Arrays;
-
-import static testcases.API.Handling_TokenGeneration.renewBearerToken;
 import static testcases.API.Handling_TokenGeneration.renewoAuthToken;
 
 public class Handling_POST_PUT_DELETE_PATCH {
@@ -24,7 +19,7 @@ public class Handling_POST_PUT_DELETE_PATCH {
 
         Response response = RestAssured
                 .given()
-                    .header("Authorization","Bearer "+renewBearerToken())
+                    .header("Authorization","Bearer "+renewoAuthToken())
                     .contentType(ContentType.JSON)
                     .baseUri("https://reqres.in")
                     .body(input_body_put)

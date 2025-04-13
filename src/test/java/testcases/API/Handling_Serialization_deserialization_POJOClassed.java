@@ -9,7 +9,7 @@ package testcases.API;
 
 //Pending Activity to do later
 
-public class Handling_Serialization_deserialization {
+public class Handling_Serialization_deserialization_POJOClassed {
 
 
 }
