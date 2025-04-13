@@ -23,8 +23,8 @@ public class Handling_DataProvider_Parameterization {
     public String returnInputJson_CreateStudent(String fname, String lname, String nation){
 
         String request_createStudent = "{\n" +
-                "  \"FirstName\": \""+fname+"\",\n" +  //create variable fname
-                "  \"LastName\": \""+lname+"\",\n" +    // created variable lname
+                "  \"firstName\": \""+fname+"\",\n" +  //create variable fname
+                "  \"lastName\": \""+lname+"\",\n" +    // created variable lname
                 "  \"country\": \""+nation+"\",\n" +
                 "  \"postalCode\": \"401010\"\n" +
                 "}";

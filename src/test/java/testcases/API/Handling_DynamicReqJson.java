@@ -18,8 +18,8 @@ public class Handling_DynamicReqJson {
     public String returnInputJson_CreateStudent(String fname, String lname, String nation, String zip){
 
         String request_createStudent = "{\n" +
-                "  \"FirstName\": \""+fname+"\",\n" +  //create variable fname
-                "  \"LastName\": \""+lname+"\",\n" +    // created variable lname
+                "  \"firstName\": \""+fname+"\",\n" +  //create variable fname
+                "  \"lastName\": \""+lname+"\",\n" +    // created variable lname
                 "  \"country\": \""+nation+"\",\n" +    //created variable nation
                 "  \"postalCode\": \""+zip+"\"\n" +     //created variable zip
                 "}";
@@ -61,7 +61,7 @@ public class Handling_DynamicReqJson {
                 .extract()
                 .response();
 
-        System.out.println(response.jsonPath().getString("FirstName"));
+        System.out.println(response.jsonPath().getString("firstName"));
     }
 
     //Write the code to delete the data as it is the best way.
