@@ -27,7 +27,7 @@ public class API_Testing {
                 .log().all()
                 .assertThat()
                 .statusCode(200)
-                //.body("FirstName", equalTo("<[Harmon]>"),
+                //.body("firstName", equalTo("<[Harmon]>"),
                   //      "country", equalTo("<[Ecuador]>"))
                 .extract()
                 .response();

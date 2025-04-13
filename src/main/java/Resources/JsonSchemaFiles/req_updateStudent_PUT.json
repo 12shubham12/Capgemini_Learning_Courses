@@ -1,6 +1,6 @@
 {
-  "FirstName": "TestUser",
-  "LastName": "TestLast",
+  "firstName": "TestUser",
+  "lastName": "TestLast",
   "country": "India",
   "postalCode": "400000"
 }
