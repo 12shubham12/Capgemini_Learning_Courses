@@ -33,11 +33,11 @@ public class Handling_complex_Responses {
         softassert.assertEquals(purchasedAmount, 910);
         System.out.println(purchasedAmount);
 
-        //Print title of hte first course
+        //Print title of the first course
         String firstTitle = js.getString("courses[0].title");
         System.out.println(firstTitle);
 
-        //Print title of hte first course
+        //Print title of the third course
         String thirdTitle = js.getString("courses[2].title");
         System.out.println(thirdTitle);
 

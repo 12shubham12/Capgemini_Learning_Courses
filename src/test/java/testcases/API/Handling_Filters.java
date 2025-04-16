@@ -13,7 +13,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 //Can be used to filter the request or response
-//Filter statement to be used with given() menthod
+//Filter statement to be used with given() method
 public class Handling_Filters {
 
     @Test

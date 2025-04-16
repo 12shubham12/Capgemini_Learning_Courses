@@ -6,6 +6,8 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
+import java.sql.*;
+
 public class Helper_API {
     public static RequestSpecification reqSpec;
     public static ResponseSpecification resSpec;
@@ -36,4 +38,14 @@ public class Helper_API {
         return resSpec;
     }
 
+    //DataBase connection (ojdbc11 dependency)
+    String username = "";
+    String password = "";
+    String hostname ="";
+    public String getDatafromDB(String data) throws SQLException {
+        Connection connections = DriverManager.getConnection(username, password, hostname);
+        Statement statement = connections.createStatement();
+        ResultSet res = statement.executeQuery("Select otp from otp_table where sys_creation_date<''");
+        return res.getString(data);
+    }
 }

@@ -18,7 +18,7 @@ import java.io.IOException;
 //This is serialization example
 public class Handling_Simple_POJOClass_SerialAndDeserial{
 
-    /*Below code we can put inside a Payloads class(this call will have all the methods to
+    /*Below code we can put inside a Payloads class(this class will have all the methods to
     read or json create payload and this class we can put inside src/main/java/payloads package
     */
 
