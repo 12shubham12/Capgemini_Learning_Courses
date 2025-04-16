@@ -80,6 +80,7 @@ public class Handling_Assertions {
         //for boolean -> assertTrue(response.jsonPath().getBoolean("AccStatusActive"));
         assertEquals(response.statusCode(), 200);
         assertEquals(response.contentType(), "application/json");
+        assertEquals(response.getHeader("Authorization"), "");
 
         //Print the response in console
         System.out.println(response.prettyPrint());

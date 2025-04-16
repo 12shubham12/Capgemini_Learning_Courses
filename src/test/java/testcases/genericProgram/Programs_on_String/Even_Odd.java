@@ -1,4 +1,4 @@
-package testcases.genericProgram;
+package testcases.genericProgram.Programs_on_String;
 
 public class Even_Odd {
 

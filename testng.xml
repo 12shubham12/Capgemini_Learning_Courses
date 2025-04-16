@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="./src/test/java/testcases/WindowHandle_Test.java">
-        <parameter name="browser" value="chrome">
-        </parameter>
+    <listeners>
+        <listener class-name="utility.Listeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/sraj8/Desktop/Trainings/Personal_Automation_Training/GUI_API_Auto_1/src/test/java/testcases/UI/Handling_Frames_Integrated_withListeners.java">
         <classes>
-            <class name="testcases.UI.WindowHandle_Test">
+            <class name="testcases.UI.Handling_Frames_Integrated_withListeners">
                 <methods>
-                    <include name="test_handle_multipleWindow"/>
+                    <include name="test_FrameHandle"/>
                 </methods>
             </class>
         </classes>

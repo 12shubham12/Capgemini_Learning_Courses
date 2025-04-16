@@ -1,10 +1,8 @@
-package testcases.genericProgram;
-
-import org.testng.annotations.Test;
+package testcases.genericProgram.Programs_on_String;
 
 import java.util.Scanner;
 
-public class PrimeNumber {
+public class PrimeNumber_with_one_nmbr {
 
     public static void main(String[] args) {
 

@@ -11,7 +11,7 @@ public class BaseClass {
 
     public ConfigDataProvider config;
     public ExcelDataProvider excel;
-    public WebDriver driver;
+    public static WebDriver driver;
 
     @BeforeSuite
     public void setup() throws IOException {
